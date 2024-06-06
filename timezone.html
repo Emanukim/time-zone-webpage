@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <link rel="stylesheet" href="timezone.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="selected-country">Selected Country: </h1>
+        <p id="current-time">Current Time: </p>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">Select Country</button>
+            <div id="countryDropdown" class="dropdown-content">
+                <a href="#" onclick="selectCountry('Kenya', 'Africa/Nairobi')">Kenya</a>
+                <a href="#" onclick="selectCountry('Uganda', 'Africa/Kampala')">Uganda</a>
+                <a href="#" onclick="selectCountry('Tanzania', 'Africa/Dar_es_Salaam')">Tanzania</a>
+                <a href="#" onclick="selectCountry('Ethiopia', 'Africa/Addis_Ababa')">Ethiopia</a>
+                <a href="#" onclick="selectCountry('Somalia', 'Africa/Mogadishu')">Somalia</a>
+                <a href="#" onclick="selectCountry('Burundi', 'Africa/Bujumbura')">Burundi</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="timezone.js"></script>
+</body>
+</html>
