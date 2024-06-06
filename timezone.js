@@ -21,6 +21,7 @@ function updateTime(timezone) {
 
 document.addEventListener("DOMContentLoaded", function() {
     selectCountry('Kenya', 'Africa/Nairobi');
+    
 
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
